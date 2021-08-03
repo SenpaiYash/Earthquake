@@ -1,0 +1,77 @@
+﻿ html, body
+
+{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: arial;
+}
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 0.5px;
+    padding-bottom: 20px;
+}
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Override the default bootstrap behavior where horizontal description lists
+will truncate terms that are too long to fit in the left column
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+#main {
+    min-height: 350px;
+    margin-bottom: 250px;
+}
+
+footer {
+    height: 175px;
+    width: 100%;
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+}
+    footer .footer-content {
+        height: 250px;
+    }
+
+    footer .footer-bottom {
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        left: 0px;
+    }
+
+.outer {
+    margin-top: 100px;
+    position: absolute;
+    left: 20px;
+    width: 75%;
+}
+
+.ads {
+    margin-top: 100px;
+    position: absolute;
+    right: 20px;
+    width: 175px;
+    height: 260px;
+    background-color: #4B2543;
+    color: white;
+}
